@@ -1,0 +1,2 @@
+document.getElementById('year').textContent = new Date().getFullYear();
+const t=document.querySelector('.menu-toggle');const n=document.getElementById('site-nav');if(t&&n){t.addEventListener('click',()=>{const open=n.classList.toggle('open');t.setAttribute('aria-expanded',String(open))});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');t.setAttribute('aria-expanded','false')}))}
